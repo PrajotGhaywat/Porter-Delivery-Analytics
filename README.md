@@ -85,7 +85,53 @@ A multiple regression analysis examined the relationship between total items, di
 
 Despite the statistical significance of the overall model, its explanatory power was negligible. These variables therefore provide very little practical explanation of delivery duration.
 
-## 6. Business Recommendations
+## 6. Visual Analysis and Key Findings
+
+### 1. Delivery Duration by Day of the Week
+
+![Average Delivery Time by Day](<Screenshots/Day of The week and Average Delivery time.png>)
+
+Sunday recorded the highest average delivery duration at approximately 52.72 minutes, while Wednesday recorded the lowest at approximately 44.47 minutes.
+
+### 2. Market-wise Distribution of Delivery Duration
+
+![Market-wise Delivery Duration](<Screenshots/Delivery duration as Per Markets.png>)
+
+The box plot compares delivery-duration distributions across six markets, highlighting differences in central tendency, variability, and extreme observations.
+
+### 3. Partner Availability and Delivery Duration by Market
+
+![Partner Availability by Market](<Screenshots/Effect on Delivery Duration with Partner Availability (Market Wise).png>)
+
+Market 2 had the highest average partner availability (4.91), while Market 1 had the lowest (0.71). Market 1 also recorded the highest average delivery duration (55.21 minutes).
+
+### 4. Average Order Value by Market
+
+![Average Order Value by Market](<Screenshots/Order Value by Market.png>)
+
+The analysis compares average order values across markets. Market 4 recorded the highest average order value at approximately 2,896.37.
+
+### 5. Peak Hours, On-shift Partners and Delivery Duration
+
+![Peak Hours and Delivery Duration](<Screenshots/Peak Hours and Delivery Duration.png>)
+
+This analysis compares average delivery duration and on-shift delivery partners across different peak-hour categories to examine operational patterns.
+
+### 6. Regression Analysis: Order Items and Delivery Duration
+
+![Regression Analysis](<Screenshots/Regression Analysis of Total Items and Number of Distinct items on Delivery duration.png>)
+
+The regression model had an R-squared value of approximately 0.00456%, indicating negligible explanatory power. Although the number of distinct items was statistically significant (p = 0.039), the model has very limited practical predictive value.
+
+### 7. Busy-to-On-shift Partner Ratio and Delivery Duration
+
+![Partner Workload Ratio](<Screenshots/Scatter Plot of Busy to onshift partner ratio and delivery duration.png>)
+
+The scatter plot examines the relationship between the busy-to-on-shift partner ratio and delivery duration, highlighting the concentration of observations and extreme values.
+
+
+
+## 7. Business Recommendations
 
 Based on the analysis, the following recommendations can be considered:
 
@@ -95,7 +141,7 @@ Based on the analysis, the following recommendations can be considered:
 4. **Partner utilisation:** Evaluate the relationship between partner workload, availability, and delivery performance before changing allocation policies.
 5. **Further investigation:** Examine additional variables such as restaurant preparation time, distance, traffic, and order complexity to better understand delivery duration.
 
-## 7. Project Limitations
+## 8. Project Limitations
 
 - Correlation does not establish causation.
 - The available variables may not capture all factors influencing delivery duration.
@@ -104,14 +150,14 @@ Based on the analysis, the following recommendations can be considered:
 - Customer IDs and order histories used in certain customer-level analyses were simulated and should not be treated as verified customer retention evidence.
 - Findings are based on the available dataset and may not generalise to all delivery markets or periods.
 
-## 8. Project Files
+## 9. Project Files
 
 | File | Description |
 |---|---|
 | `Prajot_Porter_Project.xlsx` | Complete Excel workbook containing the original dataset, analysis, calculations, Pivot Tables, charts, and supporting worksheets. |
 | `.gitattributes` | Git LFS configuration for large Excel files. |
 
-## 9. Conclusion
+## 10. Conclusion
 
 This project demonstrates the application of Excel-based analytics to a large operational dataset. It combines data preparation, exploratory analysis, statistical techniques, data visualisation, and business interpretation.
 
